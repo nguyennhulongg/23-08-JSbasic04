@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="length1" placeholder="length1">
+        <input type="text" id="length2" placeholder="length2">
+        <input type="text" id="length3" placeholder="length3">
+        <input type="button" onclick="result()" >
+    </div>
+    <script>
+        function result() {
+            var a = document.getElementById("length1").value * 1;
+            var b = document.getElementById("length2").value * 1;
+            var c = document.getElementById("length3").value * 1;
+            let p = (a + b + c);
+            let s = 1/4 * Math.sqrt((a + b + c)*(a+b-c)*(b+c-a)*(c+a-b));
+            console.log("S is:" + " " + s);
+            console.log("P is:" + " " + p);
+        }
+    </script>    
+</body>
+</html>
